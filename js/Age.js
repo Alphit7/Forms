@@ -6,5 +6,8 @@ export function AgeWarning(){
     if(AgeInput.value >= 18){
         HardTruth.style.visibility = ("visible");
     }
+    else{
+        HardTruth.style.visibility = ('hidden');
+    }
 });
 }
