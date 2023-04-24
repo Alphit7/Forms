@@ -22,13 +22,15 @@ function PasswordConfirmation(){
     let pwdValue = PasswordConfirm.value;
     if(PasswordInput.value != PasswordConfirm.value){
         alert("The password doesn't match the confirmation");
-        return;
+        return false;
     }
     else if(pwdValue ===""){
         alert("You need a password");
+        return false;
     }
     else if(pwdValue.length < 6 && pwdValue.length > 0){
         alert("Your password is too short")
+        return false;    
     }
 }
 }
